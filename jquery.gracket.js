@@ -19,6 +19,7 @@
       spacerClass : "g_spacer",
       currentClass : "g_current",
       seedClass : "g_seed",
+      scoreClass : "g_score",
       cornerRadius : 15,
       canvasId : "g_canvas",
       canvasClass : "g_canvas",
@@ -141,9 +142,9 @@
                 ((typeof data.displaySeed === "undefined") ? data.seed : data.displaySeed),
               '</span>',
               '&nbsp;' + data.name + '&nbsp;',
-              '<small>',
+              '<span class"' + node.scoreClass + '">',
                 ((typeof data.score === "undefined") ? "" : data.score),
-              '</small>',
+              '</span>',
             '</h3>'
           ].join("");
           return team = $("<div />", {
